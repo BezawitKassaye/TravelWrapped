@@ -1,0 +1,68 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensure the body takes the full screen */
+  }
+  
+  header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Travel Wrapped Page Container */
+  #animationContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Takes up remaining space */
+    height: 100%;
+  }
+  
+  /* Map Styles */
+  #map {
+    flex-grow: 1; /* Map takes up all available vertical space */
+    width: 100%;  /* Map takes up full horizontal space */
+    height: 100%; /* Map height takes up 100% of the available container height */
+  }
+  
+  /* Controls Styles (Buttons) */
+  #controls {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background: #f4f4f9;
+    position: relative;
+  }
+  
+  #controls button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #downloadVideo {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #downloadVideo:hover {
+    background-color: #45a049;
+  }
+  
+  #goBack {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  #goBack:hover {
+    background-color: #e53935;
+  }
+  

@@ -1,0 +1,133 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row; /* Align children in a row */
+  height: 100%; /* Take up the full remaining height */
+  overflow: hidden;
+}
+
+#app {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+#map {
+  flex: 2; /* Map takes up more space */
+  height: 100%; /* Full height of its container */
+  width: 100%; /* Full width of its container */
+}
+
+#sidebar {
+  flex: 1; /* Sidebar takes up less space */
+  max-width: 400px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow-y: auto;
+  height: 100%; /* Ensure sidebar height takes up full space */
+}
+
+#controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background: #f4f4f9;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#stats {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#locationList {
+  margin-top: 1rem;
+}
+
+#locationList h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#locations {
+  list-style-type: none;
+  padding: 0;
+}
+
+#locations li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+}
+
+#locations li button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#locations li button:hover {
+  background-color: #e53935;
+}
+
+#createVideo {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#createVideo:hover {
+  background-color: #0056b3;
+}
+
+#animationContainer {
+  flex-grow: 1; /* Takes up remaining space */
+  height: 100%;
+  width: 100%;
+}

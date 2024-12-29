@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Wrapped</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  <!-- Static CSS file -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Travel Wrapped</h1>
+  </header>
+
+  <main>
+    <div id="app">
+      <div id="map"></div>
+      <div id="sidebar">
+        <div id="controls">
+          <input type="text" id="location" placeholder="Enter a location (e.g., Paris)">
+          <button id="addLocation">Add</button>
+        </div>
+        <p id="stats">Total Locations: 0</p>
+        <div id="locationList">
+          <h2>Locations</h2>
+          <ul id="locations"></ul>
+          <button id="createVideo">Create My Travel Wrapped</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>  <!-- Static JS file -->
+</body>
+</html>
